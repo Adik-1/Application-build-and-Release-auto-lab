@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101827">
+    <title>ClassLab | CI/CD Deployment</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js" defer></script>
+</head>
+<body>
+    <main class="card">
+        <div class="status"><span class="status-dot"></span> DEPLOYMENT ONLINE</div>
+        <p class="eyebrow">JENKINS × DOCKER × GITHUB</p>
+        <h1>Your app is<br><span>up and running.</span></h1>
+        <p class="description">
+            This page was built into a Docker image, published to Docker Hub,
+            and deployed automatically by Jenkins.
+        </p>
+        <div class="details">
+            <div><span class="detail-label">CONTAINER</span><strong>classlab-web</strong></div>
+            <div><span class="detail-label">LOCAL URL</span><strong>localhost:8080</strong></div>
+        </div>
+        <button id="check-button" type="button">Check deployment <span aria-hidden="true">→</span></button>
+        <p id="check-result" class="result" aria-live="polite"></p>
+    </main>
+    <footer>Served by NGINX · Delivered with care</footer>
+</body>
+</html>
